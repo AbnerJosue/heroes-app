@@ -1,3 +1,8 @@
 .sidenav-container {
     height: 100vh;
 }
+
+.toolbar{
+    background-color: #673Ab7 !important;
+    color: white;
+  }
