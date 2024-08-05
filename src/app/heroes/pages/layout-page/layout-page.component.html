@@ -18,9 +18,9 @@
             </mat-list-item>
         </mat-nav-list>
     </mat-sidenav>
-    <mat-toolbar>
+    <mat-toolbar class="toolbar">
         <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
+            <mat-icon style="color: white;">menu</mat-icon>
         </button>
         <span class="spacer"> </span>
         <button mat-button>
@@ -32,5 +32,3 @@
         <router-outlet></router-outlet>
     </div>
 </mat-sidenav-container>
-
-
