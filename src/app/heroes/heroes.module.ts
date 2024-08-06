@@ -8,6 +8,8 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { MaterialModule } from '../material/material.module';
+import { provideHttpClient } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -16,12 +18,14 @@ import { MaterialModule } from '../material/material.module';
     LayoutPageComponent,
     NewPageComponent,
     SearchPageComponent,
-    ListPageComponent
+    ListPageComponent,
+    CardComponent,
   ],
+ 
   imports: [
     CommonModule,
     HeroesRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class HeroesModule { }
