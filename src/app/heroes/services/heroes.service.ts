@@ -18,12 +18,11 @@ export class HeroesService {
     getHeroById( id:string ):Observable<Hero|undefined>{
         return this.http.get<Hero>(`${this.baseUrl}/heroes/${id}`)
         .pipe( catchError( 
-            err => of(undefined) 
+            err => of(undefined)
         ));
     }
 
     getSuggestions( term:string ):Observable<Hero[]>{
-        console.log(term);
         return this.http.get<Hero[]>(`${this.baseUrl}/heroes?q=${term}&_limit=5`);
     }
 

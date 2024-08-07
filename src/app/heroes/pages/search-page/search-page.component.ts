@@ -20,7 +20,6 @@ export class SearchPageComponent  {
   ) { }
 
   searchHero(){
-    
     const value: string = this.searchInput.value || '';
 
     this.heroesService.getSuggestions(value)
@@ -29,6 +28,7 @@ export class SearchPageComponent  {
   
 
   onSelectedOption( event: MatAutocompleteSelectedEvent ):void{
+
       if(!event.option.value) {
         this.seletedHero = undefined;
         return;
@@ -39,6 +39,4 @@ export class SearchPageComponent  {
       this.seletedHero = hero;
 
   }
-
-
 }
