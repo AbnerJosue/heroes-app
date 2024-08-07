@@ -17,7 +17,6 @@
             @for (hero of heroes; track hero) {
               <mat-option [value]="hero">{{hero.superhero}}</mat-option>
             }
-
             <mat-option 
                 *ngIf="heroes.length === 0 && searchInput.value && searchInput.value.length > 0" [value]=""
             >
