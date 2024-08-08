@@ -23,7 +23,8 @@
             <mat-icon style="color: white;">menu</mat-icon>
         </button>
         <span class="spacer"> </span>
-        <button mat-button>
+        <span> {{ user?.email }} </span>
+        <button (click)="onLogout()" mat-button style="color: white;">
             Logout
         </button>
     </mat-toolbar>
