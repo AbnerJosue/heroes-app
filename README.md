@@ -14,3 +14,5 @@ recuerda tener la ultima version de node js -> 20.
 # Proyecto Heroes App
 Este proyecto es basado en el curso de Fernando Herrera Angular desde Cero.
 
+Principal Proyecto
+
